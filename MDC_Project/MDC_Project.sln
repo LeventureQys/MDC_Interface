@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDC_Interface", "MDC_Interface\MDC_Interface.vcxproj", "{B925622B-1841-42B8-8718-4D9D090C462D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDC_Controller", "MDC_Controller\MDC_Controller.vcxproj", "{55FF7CE1-FF18-418C-B495-F7D655770EBE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "South_NetworkBase", "South_NetworkBase\South_NetworkBase.vcxproj", "{33612772-04C0-400F-A9F9-B81E91B21C2B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDC_Center", "MDC_Center\MDC_Center.vcxproj", "{B479AE54-EC85-4909-835A-0B0EE338E5C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Network", "Network", "{DDAC7F32-D275-4BD6-B52F-C6C59FD6153B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDC_NetClient", "MDC_Client\MDC_Client.vcxproj", "{80A6FA7E-95CF-4EAA-AB53-7EC6F6CEB7B0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestNetInclude", "TestNetInclude\TestNetInclude.vcxproj", "{5DFBA990-419B-42BE-B4A9-084C6ADC5D0D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDC_NetServer", "MDC_NetServer\MDC_NetServer.vcxproj", "{3AEB95D3-BE23-4E44-96D0-FBDDDB941213}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B925622B-1841-42B8-8718-4D9D090C462D}.Debug|x86.ActiveCfg = Debug|Win32
+		{B925622B-1841-42B8-8718-4D9D090C462D}.Debug|x86.Build.0 = Debug|Win32
+		{B925622B-1841-42B8-8718-4D9D090C462D}.Release|x86.ActiveCfg = Release|Win32
+		{B925622B-1841-42B8-8718-4D9D090C462D}.Release|x86.Build.0 = Release|Win32
+		{55FF7CE1-FF18-418C-B495-F7D655770EBE}.Debug|x86.ActiveCfg = Debug|Win32
+		{55FF7CE1-FF18-418C-B495-F7D655770EBE}.Debug|x86.Build.0 = Debug|Win32
+		{55FF7CE1-FF18-418C-B495-F7D655770EBE}.Release|x86.ActiveCfg = Release|Win32
+		{55FF7CE1-FF18-418C-B495-F7D655770EBE}.Release|x86.Build.0 = Release|Win32
+		{33612772-04C0-400F-A9F9-B81E91B21C2B}.Debug|x86.ActiveCfg = Debug|Win32
+		{33612772-04C0-400F-A9F9-B81E91B21C2B}.Debug|x86.Build.0 = Debug|Win32
+		{33612772-04C0-400F-A9F9-B81E91B21C2B}.Release|x86.ActiveCfg = Release|Win32
+		{33612772-04C0-400F-A9F9-B81E91B21C2B}.Release|x86.Build.0 = Release|Win32
+		{B479AE54-EC85-4909-835A-0B0EE338E5C3}.Debug|x86.ActiveCfg = Debug|Win32
+		{B479AE54-EC85-4909-835A-0B0EE338E5C3}.Debug|x86.Build.0 = Debug|Win32
+		{B479AE54-EC85-4909-835A-0B0EE338E5C3}.Release|x86.ActiveCfg = Release|Win32
+		{B479AE54-EC85-4909-835A-0B0EE338E5C3}.Release|x86.Build.0 = Release|Win32
+		{80A6FA7E-95CF-4EAA-AB53-7EC6F6CEB7B0}.Debug|x86.ActiveCfg = Debug|Win32
+		{80A6FA7E-95CF-4EAA-AB53-7EC6F6CEB7B0}.Debug|x86.Build.0 = Debug|Win32
+		{80A6FA7E-95CF-4EAA-AB53-7EC6F6CEB7B0}.Release|x86.ActiveCfg = Release|Win32
+		{80A6FA7E-95CF-4EAA-AB53-7EC6F6CEB7B0}.Release|x86.Build.0 = Release|Win32
+		{5DFBA990-419B-42BE-B4A9-084C6ADC5D0D}.Debug|x86.ActiveCfg = Debug|Win32
+		{5DFBA990-419B-42BE-B4A9-084C6ADC5D0D}.Debug|x86.Build.0 = Debug|Win32
+		{5DFBA990-419B-42BE-B4A9-084C6ADC5D0D}.Release|x86.ActiveCfg = Release|Win32
+		{5DFBA990-419B-42BE-B4A9-084C6ADC5D0D}.Release|x86.Build.0 = Release|Win32
+		{3AEB95D3-BE23-4E44-96D0-FBDDDB941213}.Debug|x86.ActiveCfg = Debug|Win32
+		{3AEB95D3-BE23-4E44-96D0-FBDDDB941213}.Debug|x86.Build.0 = Debug|Win32
+		{3AEB95D3-BE23-4E44-96D0-FBDDDB941213}.Release|x86.ActiveCfg = Release|Win32
+		{3AEB95D3-BE23-4E44-96D0-FBDDDB941213}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33612772-04C0-400F-A9F9-B81E91B21C2B} = {DDAC7F32-D275-4BD6-B52F-C6C59FD6153B}
+		{80A6FA7E-95CF-4EAA-AB53-7EC6F6CEB7B0} = {DDAC7F32-D275-4BD6-B52F-C6C59FD6153B}
+		{5DFBA990-419B-42BE-B4A9-084C6ADC5D0D} = {DDAC7F32-D275-4BD6-B52F-C6C59FD6153B}
+		{3AEB95D3-BE23-4E44-96D0-FBDDDB941213} = {DDAC7F32-D275-4BD6-B52F-C6C59FD6153B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {005BF759-76EC-4A74-98FD-BEBC19F9BC0F}
+	EndGlobalSection
+EndGlobal

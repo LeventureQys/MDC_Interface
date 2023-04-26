@@ -1,0 +1,13 @@
+﻿  Reading Qt configuration (D:/DevTools/Qt/5.14.2/msvc2017/bin/qmake)
+  moc Inc\QtTcpClientHandler.h
+  moc Inc\QtTCPServerHandler.h
+  moc Inc\QtUdpHandler.h
+  MDC_NetServer.cpp
+D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_NetServer\Inc\QtTCPServerHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  moc_QtTcpClientHandler.cpp
+  moc_QtTCPServerHandler.cpp
+  moc_QtUdpHandler.cpp
+D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_NetServer\Inc\QtTCPServerHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Debug\moc\moc_QtTCPServerHandler.cpp)
+D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_NetServer\Inc\QtUdpHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Debug\moc\moc_QtUdpHandler.cpp)
+    正在创建库 D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\MDC_NetServer.lib 和对象 D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\MDC_NetServer.exp
+  MDC_NetServer.vcxproj -> D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\MDC_NetServer.dll

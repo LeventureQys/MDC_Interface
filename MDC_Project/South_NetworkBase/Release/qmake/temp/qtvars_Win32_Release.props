@@ -1,0 +1,9 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+<Qt_DEFINES_>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;QT_NO_DEBUG;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB</Qt_DEFINES_>
+<Qt_INCLUDEPATH_>C:\Users\95149\AppData\Local\Temp\kdidtrfc.gfp;D:\DevTools\Qt\5.14.2\msvc2017\include;D:\DevTools\Qt\5.14.2\msvc2017\include\QtGui;D:\DevTools\Qt\5.14.2\msvc2017\include\QtANGLE;D:\DevTools\Qt\5.14.2\msvc2017\include\QtNetwork;D:\DevTools\Qt\5.14.2\msvc2017\include\QtCore;C:\Users\95149\AppData\Local\Temp\kdidtrfc.gfp;/include;D:\DevTools\Qt\5.14.2\msvc2017\mkspecs\win32-msvc</Qt_INCLUDEPATH_>
+<Qt_STDCPP_></Qt_STDCPP_>
+<Qt_RUNTIME_>MultiThreadedDLL</Qt_RUNTIME_>
+<Qt_CL_OPTIONS_>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus</Qt_CL_OPTIONS_>
+<Qt_LIBS_>D:\DevTools\Qt\5.14.2\msvc2017\lib\Qt5Gui.lib;D:\DevTools\Qt\5.14.2\msvc2017\lib\Qt5Network.lib;D:\DevTools\Qt\5.14.2\msvc2017\lib\Qt5Core.lib;D:\DevTools\Qt\5.14.2\msvc2017\lib\qtmain.lib;shell32.lib</Qt_LIBS_>
+<Qt_LINK_OPTIONS_>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'"</Qt_LINK_OPTIONS_>

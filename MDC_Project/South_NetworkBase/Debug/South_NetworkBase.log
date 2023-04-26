@@ -1,0 +1,16 @@
+﻿  moc udp\QtUdpHandler.h
+  moc tcp\server\QtTCPServerHandler.h
+  moc tcp\client\QtTcpClientHandler.h
+  QtTcpBaseHandler.cpp
+  QtTcpClientHandler.cpp
+  QtTCPServerHandler.cpp
+  QtUdpHandler.cpp
+D:\WorkShop\Github\MDC_Project\MDC_Project\South_NetworkBase\tcp\server\QtTCPServerHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 tcp\server\QtTCPServerHandler.cpp)
+D:\WorkShop\Github\MDC_Project\MDC_Project\South_NetworkBase\udp\QtUdpHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 udp\QtUdpHandler.cpp)
+  moc_QtUdpHandler.cpp
+  moc_QtTCPServerHandler.cpp
+  moc_QtTcpClientHandler.cpp
+D:\WorkShop\Github\MDC_Project\MDC_Project\South_NetworkBase\tcp\server\QtTCPServerHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Debug\moc\moc_QtTCPServerHandler.cpp)
+D:\WorkShop\Github\MDC_Project\MDC_Project\South_NetworkBase\udp\QtUdpHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Debug\moc\moc_QtUdpHandler.cpp)
+    正在创建库 D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\South_NetworkBase.lib 和对象 D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\South_NetworkBase.exp
+  South_NetworkBase.vcxproj -> D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\South_NetworkBase.dll

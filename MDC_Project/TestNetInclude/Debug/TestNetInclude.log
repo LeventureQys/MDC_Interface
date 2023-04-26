@@ -1,0 +1,6 @@
+﻿  Reading Qt configuration (D:/DevTools/Qt/5.14.2/msvc2017/bin/qmake)
+  TestNetInclude.cpp
+D:\WorkShop\Github\MDC_Project\MDC_Project\South_NetworkBase\udp\QtUdpHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+    正在创建库 D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\TestNetInclude.lib 和对象 D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\TestNetInclude.exp
+TestNetInclude.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const QtUdpHandler::staticMetaObject" (?staticMetaObject@QtUdpHandler@@2UQMetaObject@@B)
+D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\TestNetInclude.dll : fatal error LNK1120: 1 个无法解析的外部命令

@@ -1,0 +1,2 @@
+D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\MDC_Controller.exe.lastcodeanalysissucceeded
+D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_Controller\Debug\NativeCodeAnalysis.read.1.tlog
