@@ -24,6 +24,7 @@ struct ClnInfo
 
 class Q_DECL_EXPORT QtTCPServerHandler : public QObject
 {
+
 	Q_OBJECT
 
 public:

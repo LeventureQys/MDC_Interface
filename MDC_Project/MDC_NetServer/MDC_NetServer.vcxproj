@@ -32,12 +32,12 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
     <QtInstall>5.14.2_msvc2017</QtInstall>
-    <QtModules>core</QtModules>
+    <QtModules>core;network</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
     <QtInstall>5.14.2_msvc2017</QtInstall>
-    <QtModules>core</QtModules>
+    <QtModules>core;network</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -90,14 +90,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="TCPServer\TCPServer.cpp" />
+    <ClCompile Include="UDPServer\UDPServer.cpp" />
     <ClInclude Include="Inc\QtTcpBaseHandler.h" />
+    <QtMoc Include="UDPServer\UDPServer.h" />
+    <QtMoc Include="TCPServer\TCPServer.h" />
     <QtMoc Include="Inc\QtTcpClientHandler.h" />
     <QtMoc Include="Inc\QtTCPServerHandler.h" />
     <QtMoc Include="Inc\QtUdpHandler.h" />
     <ClInclude Include="Inc\south_networkbase_global.h" />
-    <ClInclude Include="mdc_netserver_global.h" />
-    <ClInclude Include="MDC_NetServer.h" />
-    <ClCompile Include="MDC_NetServer.cpp" />
+    <ClInclude Include="Main\mdc_netserver_global.h" />
+    <ClInclude Include="Main\MDC_NetServer.h" />
+    <ClCompile Include="Main\MDC_NetServer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

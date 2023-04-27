@@ -1,11 +1,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-<Qt_DEFINES_>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_GUI_LIB;QT_CORE_LIB</Qt_DEFINES_>
-<Qt_INCLUDEPATH_>C:\Users\95149\AppData\Local\Temp\y0t3pxl1.pkr;D:\DevTools\Qt\5.14.2\msvc2017\include;D:\DevTools\Qt\5.14.2\msvc2017\include\QtGui;D:\DevTools\Qt\5.14.2\msvc2017\include\QtANGLE;D:\DevTools\Qt\5.14.2\msvc2017\include\QtCore;C:\Users\95149\AppData\Local\Temp\y0t3pxl1.pkr;/include;D:\DevTools\Qt\5.14.2\msvc2017\mkspecs\win32-msvc</Qt_INCLUDEPATH_>
+<Qt_DEFINES_>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB</Qt_DEFINES_>
+<Qt_INCLUDEPATH_>C:\Users\95149\AppData\Local\Temp\i3hh4oks.5ce;D:\DevTools\Qt\5.14.2\msvc2017\include;D:\DevTools\Qt\5.14.2\msvc2017\include\QtGui;D:\DevTools\Qt\5.14.2\msvc2017\include\QtANGLE;D:\DevTools\Qt\5.14.2\msvc2017\include\QtNetwork;D:\DevTools\Qt\5.14.2\msvc2017\include\QtCore;C:\Users\95149\AppData\Local\Temp\i3hh4oks.5ce;/include;D:\DevTools\Qt\5.14.2\msvc2017\mkspecs\win32-msvc</Qt_INCLUDEPATH_>
 <Qt_STDCPP_></Qt_STDCPP_>
 <Qt_RUNTIME_>MultiThreadedDebugDLL</Qt_RUNTIME_>
 <Qt_CL_OPTIONS_>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus</Qt_CL_OPTIONS_>
-<Qt_LIBS_>D:\DevTools\Qt\5.14.2\msvc2017\lib\Qt5Guid.lib;D:\DevTools\Qt\5.14.2\msvc2017\lib\Qt5Cored.lib;D:\DevTools\Qt\5.14.2\msvc2017\lib\qtmaind.lib;shell32.lib</Qt_LIBS_>
+<Qt_LIBS_>D:\DevTools\Qt\5.14.2\msvc2017\lib\Qt5Guid.lib;D:\DevTools\Qt\5.14.2\msvc2017\lib\Qt5Networkd.lib;D:\DevTools\Qt\5.14.2\msvc2017\lib\Qt5Cored.lib;D:\DevTools\Qt\5.14.2\msvc2017\lib\qtmaind.lib;shell32.lib</Qt_LIBS_>
 <Qt_LINK_OPTIONS_>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'"</Qt_LINK_OPTIONS_>
 <QMake_QT_SYSROOT_></QMake_QT_SYSROOT_>
 <QMake_QT_INSTALL_PREFIX_>D:/DevTools/Qt/5.14.2/msvc2017</QMake_QT_INSTALL_PREFIX_>
@@ -37,7 +37,7 @@
     <QtBkup_QtInstall
       >5.14.2_msvc2017</QtBkup_QtInstall>
     <QtBkup_QtModules
-      >core</QtBkup_QtModules>
+      >core;network</QtBkup_QtModules>
     <QtBkup_QtPathBinaries
       >bin</QtBkup_QtPathBinaries>
     <QtBkup_QtPathLibraryExecutables

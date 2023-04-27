@@ -23,10 +23,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mdc_netserver_global.h">
+    <ClInclude Include="Main\mdc_netserver_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClCompile Include="MDC_NetServer.cpp">
+    <ClCompile Include="Main\MDC_NetServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClInclude Include="Inc\QtTcpBaseHandler.h">
@@ -35,7 +35,7 @@
     <ClInclude Include="Inc\south_networkbase_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MDC_NetServer.h">
+    <ClInclude Include="Main\MDC_NetServer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -49,5 +49,19 @@
     <QtMoc Include="Inc\QtUdpHandler.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="TCPServer\TCPServer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="UDPServer\UDPServer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TCPServer\TCPServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPServer\UDPServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
