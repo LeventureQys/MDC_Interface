@@ -44,6 +44,7 @@ signals:
 
 	
 private:
+	bool bln_init = false;
 	void Init();
 	bool initLocalLANInterface();
 	bool initConnect();

@@ -1,5 +1,7 @@
 #pragma once
-
+//Author:Leventure
+//Date:2023.4.27
+//Info:用于做一个独立线程的TCP连接的库
 #include <QObject>
 #include "qsharedpointer.h"
 #include "../Inc/QtUdpHandler.h"
@@ -33,16 +35,20 @@ public slots:
 	void SendUdp(const QByteArray& bytes, const QString& qsSendTo = "", quint16 port = 0);
 
 	void em(const QString& function, const QString& strMessage);
+
 signals:
 	//发送错误代码
 	void ErrorMessage(const QString& function, const QString& strMessage);
 	void RecvedUdp(const QByteArray& bytes, const QString& qsFrom, const quint16 port);
 	
 private:
+	bool bln_init = false;
 	void Init();
 	void InitConnect();
-	const QString str_GroupAddr = "224.114.114.123";
-	const quint16 udp_port = 1145;	//udp组播地址
+	//const
+	QString str_GroupAddr = "224.114.114.123";
+	quint16 udp_port = 1145;	//udp组播地址
+
 	QSharedPointer<QtUdpHandler> ptr_udp;
 	QSharedPointer<QThread> ptr_thread;
 

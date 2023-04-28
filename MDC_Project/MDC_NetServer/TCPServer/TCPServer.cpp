@@ -3,7 +3,7 @@
 TCPServer::TCPServer(QObject *parent)
 	: QObject(parent)
 {
-
+	//TODO:应该是要添加一个配置文件的，目前留空
 }
 
 TCPServer::~TCPServer()
@@ -51,12 +51,14 @@ bool TCPServer::StartTCP(Connection_Type ConnectinoLevel)
 
 void TCPServer::Close()
 {
-
+	this->ptr_tcp.data()->CloseAllConn();
+	this->ptr_tcp.data()->Close();
+	this->bln_init = false;
 }
 
 quint16 TCPServer::getConnectCount()
 {
-	return quint16();
+	return this->ptr_tcp.data()->ConnectCount();
 }
 
 void TCPServer::Init()
@@ -77,7 +79,7 @@ void TCPServer::Init()
 
 	//注册
 	this->initConnect();
-
+	this->bln_init = true;
 }
 
 bool TCPServer::initConnect()
@@ -147,4 +149,8 @@ bool TCPServer::initLocalLANInterface()
 
 void TCPServer::em(const QString& function, const QString& strMessage) {
 	emit this->ErrorMessage(function, strMessage);
+}
+
+void TCPServer::SendMsg(const QByteArray& bytes, QString clnAddr = "", quint16 clnPort = 0) {
+
 }

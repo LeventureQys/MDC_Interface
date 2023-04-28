@@ -17,63 +17,57 @@ void MDC_NetServer::StartNet()
 	//2.开启UDP组播
 	//3.向网络中广播当前TCP服务的地址
 	//4.等待客户端连接
-
+	this->Init();
 
 	
 
 
 
 }
+
+void MDC_NetServer::em(const QString& function, const QString& strMessage) {
+	emit this->ErrorMessage("MDC_NetServer", "MDC_NetServer", function, strMessage);
+}
+
 bool MDC_NetServer::initNetServer()
 {
+	if (this->bln_init) {
+		this->em("initNetServer", "init Already");
+		return false;
+	}
+	
+	if (this->ptr_tcp_selfcheck.isNull()) this->ptr_tcp_selfcheck = QSharedPointer<TCPServer>(new TCPServer(this));
+	if (this->ptr_tcp_commend.isNull()) this->ptr_tcp_commend = QSharedPointer<TCPServer>(new TCPServer(this));
+	if (this->ptr_tcp_file.isNull()) this->ptr_tcp_file = QSharedPointer<TCPServer>(new TCPServer(this));
+	
+	if (this->ptr_udpserver.isNull()) this->ptr_udpserver = QSharedPointer<UDPServer>(new UDPServer(this));
+	bool bln_result = false;
+	//服务端只管开启
+	if (!this->ptr_tcp_selfcheck.data()->StartTCP(Connection_Type::SelfCheck) ||
+		!this->ptr_tcp_commend.data()->StartTCP(Connection_Type::Commend) ||
+		!this->ptr_tcp_file.data()->StartTCP(Connection_Type::FileTransfer) ||
+		!this->ptr_udpserver.data()->StartNetwork()
+		){
+		bln_result = false;
+		this->em("initNetServer", "connection failed");
+		return bln_result;
+}
+
+	
+	//this->ptr_tcp_selfcheck.data()->
 
 	return true;
-
 }
-void MDC_NetServer::em(const QString&function,const QString& strMessage)
+
+bool MDC_NetServer::initServerConnect()
 {
-	qDebug() << strMessage;
-	//emit this->ErrorMessage("MDC_NetServer", "MDC_NetServer", function, strMessage);
+	
 
 }
+
 void MDC_NetServer::Init() {
-
-
-	if (!this->initLocalLANInterface()) return;
 
 	if (!this->initNetServer()) return;
 	
+
 }
-bool MDC_NetServer::initLocalLANInterface()
-{
-	QList<QNetworkInterface> network = QNetworkInterface::allInterfaces();    // 获取所有的接口
-	foreach(QNetworkInterface net, network) {
-		QNetworkInterface::InterfaceFlags flags = net.flags();
-		QString netName = net.humanReadableName();
-
-		QList<QNetworkAddressEntry> list = net.addressEntries(); // 获取IP地址与子网掩码等
-
-		if(flags.testFlag(QNetworkInterface::IsLoopBack) ||
-			!flags.testFlag(QNetworkInterface::IsRunning)||
-			netName.contains("VM")) {
-			continue;
-		}
-
-		for (QNetworkAddressEntry address: list) {
-
-			if (address.ip().protocol() == QAbstractSocket::IPv4Protocol) {
-				qDebug() << "网卡名：" << netName
-					<< " IPv4：" << address.ip().toString()
-					<< " 子网掩码：" << address.netmask().toString();
-
-				this->local_network_interface = net;
-				qDebug() << "Init Local LAN Interfaces Success!";
-				return true;
-			}
-		}
-	}
-	qDebug() << "Init Local LAN Interfaces Failed!";
-	this->em("initLocalLANInterface", "Init Local LAN Interfaces Failed!");
-	return false;
-}
-;

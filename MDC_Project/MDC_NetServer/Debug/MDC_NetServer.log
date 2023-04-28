@@ -1,9 +1,7 @@
-﻿  moc UDPServer\UDPServer.h
-  moc TCPServer\TCPServer.h
-  TCPServer.cpp
-  UDPServer.cpp
-  MDC_NetServer.cpp
-D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_NetServer\Inc\QtUdpHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Main\MDC_NetServer.cpp)
-D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_NetServer\Inc\QtTCPServerHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 TCPServer\TCPServer.cpp)
-D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_NetServer\Inc\QtTCPServerHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 Main\MDC_NetServer.cpp)
-D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_NetServer\TCPServer\TCPServer.cpp(110): error C4716: “TCPServer::initConnect”: 必须返回一个值
+﻿  MDC_NetServer.cpp
+D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_NetServer\Inc\QtTCPServerHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\WorkShop\Github\MDC_Project\MDC_Project\MDC_NetServer\Inc\QtUdpHandler.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+    正在创建库 D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\MDC_NetServer.lib 和对象 D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\MDC_NetServer.exp
+MDC_NetServer.obj : error LNK2019: 无法解析的外部符号 "public: void __thiscall MDC_NetServer::ErrorMessageEX(class QString const &,class QString const &,class QString const &,class QString const &)" (?ErrorMessageEX@MDC_NetServer@@QAEXABVQString@@000@Z)，函数 "private: void __thiscall MDC_NetServer::em(class QString const &,class QString const &)" (?em@MDC_NetServer@@AAEXABVQString@@0@Z) 中引用了该符号
+moc_TCPServer.obj : error LNK2019: 无法解析的外部符号 "public: void __thiscall TCPServer::SendMsg(class QByteArray const &,class QString,unsigned short)" (?SendMsg@TCPServer@@QAEXABVQByteArray@@VQString@@G@Z)，函数 "private: static void __cdecl TCPServer::qt_static_metacall(class QObject *,enum QMetaObject::Call,int,void * *)" (?qt_static_metacall@TCPServer@@CAXPAVQObject@@W4Call@QMetaObject@@HPAPAX@Z) 中引用了该符号
+D:\WorkShop\Github\MDC_Project\MDC_Project\Debug\MDC_NetServer.dll : fatal error LNK1120: 2 个无法解析的外部命令
